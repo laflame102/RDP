@@ -24,11 +24,9 @@
    DB_USER=example
    DB_PASS=example
    DB_NAME=example
-   
-JWT_ACCESS_SECRET=example
-JWT_REFRESH_SECRET=example
+   JWT_ACCESS_SECRET=example
+   JWT_REFRESH_SECRET=example
    ```
-
 
 ````
 
