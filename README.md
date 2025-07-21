@@ -55,7 +55,7 @@ npm run dev
  npm run dev
 ```
 
-8. **Open app link**
+7. **Open app link**
 
 ```bash
 http://localhost:4000
