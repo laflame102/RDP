@@ -35,13 +35,21 @@ export default function RecipesPage() {
           <div>
             <h1 className="text-2xl font-bold text-gray-900">All Recipes</h1>
           </div>
-          <Link
-            href="/recipes/create"
-            className="mt-4 sm:mt-0 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors"
-          >
-            <Plus className="w-5 h-5" />
-            <span>Add Recipe</span>
-          </Link>
+          <div className="flex gap-4">
+            <Link
+              href="/recipes/create"
+              className="mt-4 sm:mt-0 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg flex items-center transition-colors"
+            >
+              <Plus className="w-5 h-5" />
+              <span>Add Recipe</span>
+            </Link>
+            <Link
+              href="/recipes/my"
+              className="mt-4 sm:mt-0 bg-blue-500 hover:bg-blue-600 px-4  text-white py-2 rounded-lg flex items-center justify-center  transition-colors"
+            >
+              My Recipes
+            </Link>
+          </div>
         </div>
 
         <div className="bg-white rounded-lg shadow-sm p-6 mb-8">

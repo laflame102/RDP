@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import RecipeCard from "@/components/RecipeCard";
 import { recipeApi } from "@/lib/services/recipeApi";
+import BackButton from "@/components/ui/BackButton";
 
 export default function MyRecipesPage() {
   const { data: recipes = [], isLoading } = useQuery({
@@ -15,6 +16,7 @@ export default function MyRecipesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <BackButton />
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8">
           <h1 className="text-2xl font-bold text-gray-900">My Recipes</h1>
           <Link
